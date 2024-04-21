@@ -42,25 +42,28 @@
               <text value="Thêm nhân viên"/>
             </properties>
           </component>
-          <vspacer id="73158">
-            <constraints>
-              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </vspacer>
-          <component id="980f6" class="javax.swing.JButton" binding="searchButton">
+          <component id="980f6" class="javax.swing.JButton" binding="editButton">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Tìm kiếm nhân viên"/>
+              <text value="Sửa thông tin nhân viên"/>
             </properties>
           </component>
-          <component id="1f2f5" class="javax.swing.JButton" binding="statisticsButton">
+          <component id="1f2f5" class="javax.swing.JButton" binding="deleteButton">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Thống kê"/>
+              <text value="Xóa thông tin nhân viên"/>
+            </properties>
+          </component>
+          <component id="1365" class="javax.swing.JButton" binding="logoutButton">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Đăng xuất"/>
             </properties>
           </component>
         </children>

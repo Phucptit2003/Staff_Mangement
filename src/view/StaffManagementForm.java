@@ -8,8 +8,9 @@ import java.awt.event.ActionListener;
 
 public class StaffManagementForm extends JFrame {
     private JButton addButton;
-    private JButton searchButton;
-    private JButton statisticsButton;
+    private JButton editButton;
+    private JButton deleteButton;
+    private JButton logoutButton;
     private JPanel functionsPanel;
     private JLabel welcomeMessage;
 
@@ -38,16 +39,24 @@ public class StaffManagementForm extends JFrame {
                 openAddStaffForm();
             }
         });
-        searchButton.addActionListener(new ActionListener() {
+        editButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                openSearchStaffForm();
+                openEditForm();
             }
         });
-        statisticsButton.addActionListener(new ActionListener() {
+        deleteButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                openSearchStatisticsForm();
+                openDeleteForm();
+            }
+        });
+
+        // Add ActionListener for logoutButton
+        logoutButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                logout();
             }
         });
     }
@@ -56,11 +65,19 @@ public class StaffManagementForm extends JFrame {
         new AddStaffForm(this.adminController);
     }
 
-    public void openSearchStaffForm() {
-        new SearchStaffForm(this.adminController);
+    public void openDeleteForm() {
+        new DeleteForm(this.adminController);
     }
 
-    public void openSearchStatisticsForm() {
-        new StatisticsForm(this.adminController);
+    public void openEditForm() {
+        new EditForm(this.adminController);
+    }
+
+    // Method to handle logout
+    public void logout() {
+        // Close the current window
+        this.dispose();
+        // Open the login form again
+        new LoginForm();
     }
 }

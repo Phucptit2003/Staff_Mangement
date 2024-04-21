@@ -15,8 +15,21 @@ public class AdminController {
         this.admin = new Admin(username, password);
     }
 
+    public AdminController() {
+
+    }
+
     public boolean login() {
         return this.admin.login();
+    }
+    public boolean register(String name,String username,String password) {
+        return this.admin.register(name,username,password);
+    }
+    public boolean changePassword(String username, String newPassword) {
+        return this.admin.changePassword(username, newPassword);
+    }
+    public boolean logOut(){
+        return this.admin.logout();
     }
 
     private String isValidInput(String name, String birthday, String salary, String gender, boolean isMarried) {
@@ -99,24 +112,17 @@ public class AdminController {
         return staffList;
     }
 
-    public String isValidSearchInput(String name, String salaryFrom, String salaryTo, String birthday) {
+    public String isValidSearchInput(String id) {
         String error = "";
-        if (!salaryFrom.equals("") && (!MyNumber.isInt(salaryFrom) || Integer.valueOf(salaryFrom) < 0))
-            error += "Invalid Salary from\n";
-        if (!salaryTo.equals("") && (!MyNumber.isInt(salaryTo) || Integer.valueOf(salaryTo) < 0))
-            error += "Invalid Salary to\n";
-        if (!birthday.equals("") && (!MyNumber.isInt(birthday) || birthday.length() != 4))
-            error += "Invalid birth year\n";
+        if (id.length()==0)
+            error += "Invalid ID\n";
+
         return error.trim();
     }
 
-    public ArrayList<ArrayList<String>> searchStaff(String name, String salaryFrom, String salaryTo, String birthdayYear) {
-        if (name.equals("")) name = null;
-        if (salaryFrom.equals("")) salaryFrom = null;
-        if (salaryTo.equals("")) salaryTo = null;
-        ;
-        if (birthdayYear.equals("")) birthdayYear = null;
-        return convertSqlDatatoTableData(this.admin.searchStaff(name, salaryFrom, salaryTo, birthdayYear));
+    public ArrayList<ArrayList<String>> searchStaff(String id) {
+
+        return convertSqlDatatoTableData(this.admin.searchStaff(id));
     }
 
     public void deleteStaff(int staffId) {
@@ -143,5 +149,13 @@ public class AdminController {
         }
     }
 
+    public boolean logout() {
+        try {
+            return true; // Trả về true nếu đăng xuất thành công
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return false; // Trả về false nếu có lỗi xảy ra trong quá trình đăng xuất
+        }
+    }
 
 }

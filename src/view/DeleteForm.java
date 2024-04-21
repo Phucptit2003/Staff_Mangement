@@ -4,25 +4,23 @@ import controller.AdminController;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
-public class SearchStaffForm extends JFrame {
+public class DeleteForm extends JFrame {
     private JTable searchResultTable;
     private JButton searchButton;
     private JButton resetInputButton;
-    private JTextField birthYearTextField;
     private JTextField nameTextField;
-    private JTextField salaryFromTextField;
-    private JTextField salaryToTextField;
     private JPanel searchPanel;
-    private JButton editButton;
     private JButton deleteButton;
 
     private AdminController adminController;
 
-    public SearchStaffForm(AdminController adminController) {
-
+    public DeleteForm(AdminController adminController) {
         this.adminController = adminController;
 
         try {
@@ -31,19 +29,39 @@ public class SearchStaffForm extends JFrame {
             e.printStackTrace();
         }
 
-        setTitle("Search Staff Form");
+        setTitle("Delete Staff Form");
+        searchPanel = new JPanel();
         setContentPane(this.searchPanel);
-//        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        pack();
-        setVisible(true);
-        setSize(400, 500);
+        setSize(530, 600);
+
+        // Khởi tạo searchResultTable và thêm vào JScrollPane
+        searchResultTable = new JTable();
+        JScrollPane scrollPane = new JScrollPane(searchResultTable);
+        searchPanel.add(scrollPane);
+
         setTable(this.adminController.getStaffList());
+
+        // Khởi tạo các thành phần giao diện
+        searchButton = new JButton("Search");
+        resetInputButton = new JButton("Reset");
+        nameTextField = new JTextField(20);
+        deleteButton = new JButton("Delete");
+
+        // Thêm các thành phần giao diện vào panel
+        searchPanel.add(new JLabel("Enter ID:"));
+        searchPanel.add(nameTextField);
+        searchPanel.add(searchButton);
+        searchPanel.add(resetInputButton);
+        searchPanel.add(deleteButton);
+
+        // Thêm các ActionListener
         searchButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 search();
             }
         });
+
         resetInputButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -61,61 +79,36 @@ public class SearchStaffForm extends JFrame {
             @Override
             public void keyPressed(KeyEvent e) {
                 super.keyPressed(e);
-                if (e.getKeyCode()== KeyEvent.VK_ENTER){
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
                     search();
                 }
             }
         });
-        salaryFromTextField.addKeyListener(new KeyAdapter() {
-            @Override
-            public void keyPressed(KeyEvent e) {
-                super.keyPressed(e);
-                if (e.getKeyCode()== KeyEvent.VK_ENTER){
-                    search();
-                }
-            }
-        });
-        salaryToTextField.addKeyListener(new KeyAdapter() {
-            @Override
-            public void keyPressed(KeyEvent e) {
-                super.keyPressed(e);
-                if (e.getKeyCode()== KeyEvent.VK_ENTER){
-                    search();
-                }
-            }
-        });
-        birthYearTextField.addKeyListener(new KeyAdapter() {
-            @Override
-            public void keyPressed(KeyEvent e) {
-                super.keyPressed(e);
-                if (e.getKeyCode()== KeyEvent.VK_ENTER){
-                    search();
-                }
-            }
-        });
-        editButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                editStaff();
-            }
-        });
+
+
+
+//        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Sửa lại để thoát chương trình khi đóng cửa sổ
+        setVisible(true);
     }
 
-    private void editStaff(){
-        int[] selectedRows = searchResultTable.getSelectedRows();
 
-        if(selectedRows.length == 0){
-            JOptionPane.showMessageDialog(searchPanel, "Bạn chưa chọn nhân viên nào");
-        } else if(selectedRows.length > 1){
-            JOptionPane.showMessageDialog(searchPanel, "Bạn chỉ được phép chọn 1 nhân viên");
+
+    private void resetInputData() {
+        nameTextField.setText("");
+    }
+
+    private void search() {
+        String id = nameTextField.getText().trim();
+
+        String error = this.adminController.isValidSearchInput(id);
+        if (error.equals("")) {
+            setTable(this.adminController.searchStaff(id));
+            resetInputData();
         } else {
-            int staffId = Integer.valueOf(searchResultTable.getValueAt(selectedRows[0], 0).toString());
-            new EditStaffFrom(this.adminController,staffId);
-            disable();
+            JOptionPane.showMessageDialog(searchPanel, error);
         }
     }
-
-    private void deleteStaff() {
+    private void deleteStaff(){
         int[] selectedRows = searchResultTable.getSelectedRows();
         if (selectedRows.length == 0) {
             JOptionPane.showMessageDialog(searchPanel, "Bạn chưa chọn nhân viên nào cả");
@@ -145,28 +138,6 @@ public class SearchStaffForm extends JFrame {
         }
     }
 
-    private void resetInputData() {
-        nameTextField.setText("");
-        salaryFromTextField.setText("");
-        salaryToTextField.setText("");
-        birthYearTextField.setText("");
-    }
-
-    private void search() {
-        String name = nameTextField.getText().trim();
-        String salaryFrom = salaryFromTextField.getText().trim();
-        String salaryTo = salaryToTextField.getText().trim();
-        String birthYear = birthYearTextField.getText().trim();
-
-        String error = this.adminController.isValidSearchInput(name, salaryFrom, salaryTo, birthYear);
-        if (error.equals("")) {
-            setTable(this.adminController.searchStaff(name, salaryFrom, salaryTo, birthYear));
-            resetInputData();
-        } else {
-            JOptionPane.showMessageDialog(searchPanel, error);
-        }
-    }
-
     private void setTable(ArrayList<ArrayList<String>> data) {
         Object[][] os = new Object[][]{};
         if (data != null && data.get(0) != null) {
@@ -179,7 +150,7 @@ public class SearchStaffForm extends JFrame {
                 os[j] = rowData;
             }
         }
-        searchResultTable.setModel(new javax.swing.table.DefaultTableModel(
+        searchResultTable.setModel(new DefaultTableModel(
                 os,
                 new String[]{
                         "ID", "Tên", "Ngày sinh", "Lương", "Giới tính", "Tình trạng hôn nhân"
@@ -187,4 +158,9 @@ public class SearchStaffForm extends JFrame {
         ));
     }
 
+    public static void main(String[] args) {
+        // Example usage:
+        AdminController adminController = new AdminController(); // Khởi tạo controller
+        new DeleteForm(adminController); // Hiển thị form chỉnh sửa
+    }
 }

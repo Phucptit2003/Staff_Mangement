@@ -7,18 +7,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39b4f27e-16cb-49e2-94c9-830bed62e987" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/StaffManagement_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mssql.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SQLQuery_KhoiTaoVaDuLieu.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jarlib/mssql-jdbc-12.4.1.jre8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/DeleteForm.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/DeleteForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/EditForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_41_bin.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/lib/Config$ConfigFileHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/lib/Config$ConfigFileHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/lib/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/lib/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DumpStaffManagement20181113.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/StaffManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StaffManagement.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StaffManagement.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jarlib/mysql-connector-java-5.1.41-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/AbstractLayout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/DimensionInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/GridConstraints.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/GridLayoutManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/HorizontalInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/LayoutState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/Spacer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/SupportCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/com/intellij/uiDesigner/core/VerticalInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/lib/DB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/lib/DB.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/model/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/AddStaffForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/view/AddStaffForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/EditStaffFrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/view/EditStaffFrom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/LoginForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/view/LoginForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/LoginForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/view/LoginForm$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/view/LoginForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/SearchStaffForm$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/SearchStaffForm$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/SearchStaffForm$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/SearchStaffForm$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/SearchStaffForm$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/SearchStaffForm$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/SearchStaffForm$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/SearchStaffForm$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/SearchStaffForm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/StaffManagementForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/view/StaffManagementForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/StaffManagementForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/view/StaffManagementForm$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/StaffManagementForm$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/view/StaffManagementForm$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/StaffManagementForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/view/StaffManagementForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StaffManagement/view/StatisticsForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StaffManagement/view/StatisticsForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/DB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/SearchStaffForm.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/SearchStaffForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/EditForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/StaffManagementForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/StaffManagementForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/StaffManagementForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/StaffManagementForm.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,125 +68,6 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="239528574">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.45" value="1" />
-          <entry key="project.open.time.52" value="1" />
-          <entry key="project.open.time.53" value="1" />
-          <entry key="project.open.time.55" value="1" />
-          <entry key="project.opened" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="form" value="17" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="99" />
-          <entry key="properties" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="GUI_DESIGNER_FORM" value="17" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="99" />
-          <entry key="Properties" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="9683" />
-          <entry key="properties" value="23" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="9683" />
-          <entry key="Properties" value="23" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/Config.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-              <folding>
-                <element signature="e#891#892#0" expanded="true" />
-                <element signature="e#947#948#0" expanded="true" />
-                <element signature="e#1602#1603#0" expanded="true" />
-                <element signature="e#1651#1652#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/LoginForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1953#1954#0" expanded="true" />
-                <element signature="e#2006#2007#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/AdminController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#363#364#0" expanded="true" />
-                <element signature="e#404#405#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Admin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lib/DB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5756#5764#0" expanded="true" />
-                <element signature="e#14046#14054#0" expanded="true" />
-                <element signature="e#14122#14130#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -204,6 +127,7 @@
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectId" id="2f6doUHWSJIENjYckFhYCsETtJj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -236,31 +160,41 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/MyProjects/JavaProjects/IdeaProjects/StaffManagement/src/view/AddStaffForm.java" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="288" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="227" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542162419921" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jarlib/mysql-connector-java-5.1.41-bin.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/model" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\phucl\OneDrive\Desktop\File\test java1\StaffManagement\src\model" />
+      <recent name="C:\Users\phucl\OneDrive\Desktop\File\test java1\StaffManagement\src\view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\phucl\OneDrive\Desktop\File\test java1\StaffManagement\src\model" />
+      <recent name="C:\Users\phucl\OneDrive\Desktop\File\test java1\StaffManagement\src\view" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="model" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.LoginForm">
     <configuration name="DB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -281,7 +215,7 @@
       <module name="StaffManagement" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="view.*" />
+          <option name="PATTERN" value="view.EditStaffFrom" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -307,7 +241,7 @@
       <module name="StaffManagement" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="view.*" />
+          <option name="PATTERN" value="view.EditStaffFrom" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -334,20 +268,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.LoginForm" />
-      <item itemvalue="Cucumber java.All Features in: StaffManagement" />
       <item itemvalue="Application.DB" />
       <item itemvalue="Application.Staff" />
       <item itemvalue="Application.StaffManagementForm" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.All Features in: StaffManagement" />
+        <item itemvalue="Application.DB" />
         <item itemvalue="Application.StaffManagementForm" />
         <item itemvalue="Application.Staff" />
-        <item itemvalue="Application.DB" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -421,20 +354,25 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.configurationType" implementationName="CucumberJavaRunConfigurationType" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/view/LoginForm.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Staff_Management$LoginForm.ic" NAME="LoginForm Coverage Results" MODIFIED="1713129915677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>view.*</FILTER>
+    </SUITE>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -488,7 +426,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/NumberFormatException.java">
+    <entry file="jar://$PROJECT_DIR$/../../../../../../../Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/NumberFormatException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="64" selection-start-line="64" selection-end-line="64" />
@@ -503,7 +441,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/awt/Container.java">
+    <entry file="jar://$PROJECT_DIR$/../../../../../../../Program Files/Java/jdk1.8.0_171/src.zip!/java/awt/Container.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="1203" selection-start-line="1203" selection-end-line="1203" />
